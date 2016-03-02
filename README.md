@@ -4,9 +4,18 @@
 
 This is an attempt to build a simple recommendation engine which recommends similar brands based on provided data set of random shoppers and the brands that they have marked as favorites. The engine takes a brand as input, and recommends 15 similar brands. 
 
+The dataset is fairly simple and looks like the following 
+
+|   UserID   |   ItemID  |   ItemName        |
+| ---------- |:---------:| -----------------:|
+|     1      |    2      |    Newport News   |
+|     1      |    12     |    Aldo           |
+|     2      |    41     |    Derek Lam      |
+|     2      |     4     |    Moschino       |
+
 For example, the engine might recommend:
-["Citizen", "Tag Heuer", "Maurice Lacroix", ...] for "Bulova"
-["American Eagle", "Aeropostale", "Wet Seal", ... ] for "Hollister"
+1. ["Citizen", "Tag Heuer", "Maurice Lacroix", ...] for "Bulova"
+2. ["American Eagle", "Aeropostale", "Wet Seal", ... ] for "Hollister"
 
 ##Steps to Execute
 
