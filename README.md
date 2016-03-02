@@ -21,9 +21,9 @@ For example, the engine might recommend
 
 ##Implementation
 
-If we look at the data, the data is fairly simple and features on which recommendation for similar brands can be made are should mostly be based on correlation of items with users.
+If we look at the data, the data is fairly simple and features on which recommendation for similar brands can be made should mostly be based on correlation of items with users.
 
-Since we don't know have much information like category of brands, strenght of likeness of brand by user. Simple similarity computation on item vectors (whose dimensions are the userids) should give a sense of similarity.
+Since we don't know have much information like category of brands, strength of likeness of brand by user, simple similarity computation on item vectors (whose dimensions are the userids) should give a sense of similarity.
 
 There are various vector similarity alogrithms that can be used. The following have be used and implemented
 
@@ -69,7 +69,7 @@ Top 15 results for : David Kahn
 |     Think!                   |    0.4082482904638629  |
 |     Sworn Virgins!           |    0.4082482904638629  |
 
-##Other Thoughts
+##Thoughts
 
 1. Since there is no strength of likeness or rating from a user on a particular brand, Collaborative filtering commonly used for recommender systems can be used with dummy ratings as well. These techniques however aim to fill in the missing entries of a user-item association matrix. Item-Item or User-User can also be derived once items for a user are filled in the matrix. However CF based on ALS treats the ratings in the user-item matrix as explicit preferences given by the user to the item, I could not find any literature if this approach would lead to correct results. ALS in general can be evaluated by computing RMSE (root mean squared error) on existing ratings but the might not be possible for item-item recommendation.
 
