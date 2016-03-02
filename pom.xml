@@ -44,12 +44,6 @@
 			<!--comment if running using spark-submit -->
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.mahout</groupId>
-			<artifactId>mahout-core</artifactId>
-			<version>0.9</version>
-		</dependency>
-
 	</dependencies>
 	<build>
 		<plugins>

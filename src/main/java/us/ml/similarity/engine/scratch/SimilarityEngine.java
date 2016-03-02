@@ -65,7 +65,7 @@ public class SimilarityEngine {
 		Map<Integer, String> itemBrand = matrix.getItemBrand();
 		Map<Integer, Double> sortedCosineMap = MapUtils.sortByValue(cosineDistanceMap);
 		int results = 0;
-		System.out.println("Top 10 results for : " + itemBrand.get(searchId));
+		System.out.println("Top 15 results for : " + itemBrand.get(searchId));
 		System.out.println();
 		for (Entry<Integer, Double> entry : sortedCosineMap.entrySet()) {
 			System.out.println(itemBrand.get(entry.getKey()) + " (" + entry.getValue() + ")");
