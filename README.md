@@ -13,9 +13,25 @@ The dataset is fairly simple and looks like the following
 |     2      |    41     |    Derek Lam      |
 |     2      |     4     |    Moschino       |
 
-For example, the engine might recommend:
+For example, the engine might recommend
+
 1. ["Citizen", "Tag Heuer", "Maurice Lacroix", ...] for "Bulova"
 2. ["American Eagle", "Aeropostale", "Wet Seal", ... ] for "Hollister"
+
+
+##Implementation
+
+If we look at the data, the data is fairly simple and features on which recommendation for similar brands can be made are should mostly be based on correlation of items with users.
+
+Since we don't know have much information like category of brands, strenght of likeness of brand by user. Simple similarity computation on item vectors (whose dimensions are the userids) should give a sense of similarity.
+
+There are various vector similarity alogrithms that can be used. The following have be used and implemented
+
+1. CosineSimilarity
+2. EuclideanSimilarity
+3. PearsonCorellationSimilarity
+
+Since there is no test data, it is hard to say which similarity algorithm is best is this scenario. However it is usually observed that CosineSimilarity performs better.
 
 ##Steps to Execute
 
