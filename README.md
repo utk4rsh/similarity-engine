@@ -50,12 +50,21 @@ mvn exec:java -Dexec.mainClass="us.ml.similarity.engine.scratch.ItemSimilarityAp
 
 Top 15 results for : David Kahn 
 
-|   Item Name                  |   Similarity Wt        |
+|   Item Name                  |   Similarity Weigth    |
 | -----------------------------|:----------------------:|
 |     Derek Rose               |    0.5773502691896258  |
-|     Imagine by Vince Camuto  |    12               |
-|     Jhane Barnes             |    41     |    Derek Lam      |
-|     Magic Suit               |     4     |    Moschino       |
-|     Magic Suit               |     4     |    Moschino       |
-|     Magic Suit               |     4     |    Moschino       |
-|     Magic Suit               |     4     |    Moschino       |
+|     Imagine by Vince Camuto  |    0.5773502691896258  |
+|     Jhane Barnes             |    0.5773502691896258  |
+|     Magic Suit               |    0.5773502691896258  |
+|     Joey New York            |    0.5773502691896258  |
+|     Carmen Ho                |    0.5773502691896258  |
+|     Da-Nang                  |    0.4714045207910317  |
+|     Calphalon                |    0.4082482904638629  |
+|     Hilary Radley            |    0.4082482904638629  |
+|     Lida Baday               |    0.4082482904638629  |
+|     Nic+Zoe                  |    0.4082482904638629  |
+|     Tessuto                  |    0.4082482904638629  |
+|     Elijah                   |    0.4082482904638629  |
+|     Prevata                  |    0.4082482904638629  |
+|     Think!                   |    0.4082482904638629  |
+|     Sworn Virgins!           |    0.4082482904638629  |
