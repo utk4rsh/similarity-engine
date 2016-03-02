@@ -68,3 +68,12 @@ Top 15 results for : David Kahn
 |     Prevata                  |    0.4082482904638629  |
 |     Think!                   |    0.4082482904638629  |
 |     Sworn Virgins!           |    0.4082482904638629  |
+
+##Other Thoughts
+
+1. Since there is no strength of likeness or rating from a user on a particular brand, Collaborative filtering commonly used for recommender systems can be used with dummy ratings as well. These techniques however aim to fill in the missing entries of a user-item association matrix. Item-Item or User-User can also be derived once items for a user are filled in the matrix. However CF based on ALS treats the ratings in the user-item matrix as explicit preferences given by the user to the item, I could not find any literature if this approach would lead to correct results. ALS in general can be evaluated by computing RMSE (root mean squared error) on existing ratings but the might not be possible for item-item recommendation.
+
+2. Apache Mahout also provides item-item similarity APIs which which uses spark for better memory and compute optimzations.
+
+
+2. 
