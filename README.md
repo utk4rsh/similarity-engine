@@ -31,7 +31,7 @@ There are various vector similarity alogrithms that can be used. The following h
 2. EuclideanSimilarity
 3. PearsonCorellationSimilarity
 
-Since there is no test data, it is hard to say which similarity algorithm is best is this scenario. However it is usually observed that CosineSimilarity performs better.
+Since there is no test data, it is hard to say which similarity algorithm is best in this scenario. However it is usually observed that CosineSimilarity performs better.
 
 ##Steps to Execute
 
@@ -45,3 +45,17 @@ The command expects 4 paramters :
 4. Brand ID for which similar items need to recommended.
 
 mvn exec:java -Dexec.mainClass="us.ml.similarity.engine.scratch.ItemSimilarityApp" -Dexec.cleanupDaemonThreads=false -Dexec.args="CosineSimilarity 100000 5000 168"
+
+##Sample Output
+
+Top 15 results for : David Kahn 
+
+|   Item Name                  |   Similarity Wt        |
+| -----------------------------|:----------------------:|
+|     Derek Rose               |    0.5773502691896258  |
+|     Imagine by Vince Camuto  |    12               |
+|     Jhane Barnes             |    41     |    Derek Lam      |
+|     Magic Suit               |     4     |    Moschino       |
+|     Magic Suit               |     4     |    Moschino       |
+|     Magic Suit               |     4     |    Moschino       |
+|     Magic Suit               |     4     |    Moschino       |
